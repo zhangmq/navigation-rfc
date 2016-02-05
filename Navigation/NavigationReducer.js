@@ -11,11 +11,11 @@
  */
 'use strict';
 
-var NavigationActions = require('NavigationActions');
-var NavigationState = require('NavigationState');
+var NavigationActions = require('./NavigationActions');
+var NavigationState = require('./NavigationState');
 
-import type {NavigationRoute} from 'NavigationState';
-import type NavigationAction from 'NavigationActions';
+import type {NavigationRoute} from './NavigationState';
+import type NavigationAction from './NavigationActions';
 
 function NavigationReducer(currentRoute: NavigationRoute, action: Object): NavigationRoute {
   if (!NavigationState.isParent(currentRoute)) {

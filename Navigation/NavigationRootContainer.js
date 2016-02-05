@@ -12,7 +12,7 @@
 'use strict';
 
 var AsyncStorage = require('AsyncStorage');
-var NavigationReducer = require('NavigationReducer');
+var NavigationReducer = require('./NavigationReducer');
 var React = require('React');
 
 var invariant = require('invariant');

@@ -11,7 +11,7 @@
  */
 'use strict';
 
-import type {NavigationRoute} from 'NavigationState';
+import type {NavigationRoute} from './NavigationState';
 
 export type NavigationAction = {
   type: string,
@@ -64,7 +64,7 @@ function NavigationOnRouteKeyAction(key: string, action: NavigationAction): Navi
 }
 
 function isNavigationAction(action: Object): boolean {
-  return _ActionValues.indexOf(action.type) !== -1; 
+  return _ActionValues.indexOf(action.type) !== -1;
 }
 
 var NavigationActions = {

@@ -12,8 +12,8 @@
 'use strict';
 
 var React = require('react-native');
-var NavigationContainer = require('NavigationContainer');
-var NavigationState = require('NavigationState');
+var NavigationContainer = require('./NavigationContainer');
+var NavigationState = require('./NavigationState');
 var {
   StyleSheet,
   View,

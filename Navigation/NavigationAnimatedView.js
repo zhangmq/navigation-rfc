@@ -13,14 +13,14 @@
 
 var Animated = require('Animated');
 var Map = require('Map');
-var NavigationState = require('NavigationState');
-var NavigationContainer = require('NavigationContainer');
+var NavigationState = require('./NavigationState');
+var NavigationContainer = require('./NavigationContainer');
 var React = require('react-native');
 var View = require('View');
 
 var invariant = require('invariant');
 
-import type NavigationRoute from 'NavigationState';
+import type NavigationRoute from './NavigationState';
 
 type NavigationScene = {
   index: number,
