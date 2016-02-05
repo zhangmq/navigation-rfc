@@ -6,8 +6,8 @@ import NavigationRootContainer from './Navigation/NavigationRootContainer';
 import NavigationState from './Navigation/NavigationState';
 import NavigationView from './Navigation/NavigationView';
 import NavigationCard from './CustomComponents/NavigationCard';
-import * as NavigationHeader from './CustomComponents/NavigationHeader';
-import * as NavigationHeaderTitle from './CustomComponents/NavigationHeaderTitle';
+import NavigationHeader from './CustomComponents/NavigationHeader';
+import NavigationHeaderTitle from './CustomComponents/NavigationHeaderTitle';
 
 export {
     NavigationActions,
