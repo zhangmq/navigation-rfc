@@ -11,12 +11,11 @@
  */
 'use strict';
 
-var Animated = require('Animated');
-var Map = require('Map');
 var NavigationState = require('./NavigationState');
 var NavigationContainer = require('./NavigationContainer');
 var React = require('react-native');
-var View = require('View');
+
+var { Animated, View, Map } = require('react-native');
 
 var invariant = require('invariant');
 
@@ -193,5 +192,4 @@ var NavigationAnimatedView = React.createClass({
 });
 
 NavigationAnimatedView = NavigationContainer.create(NavigationAnimatedView);
-
 module.exports = NavigationAnimatedView;

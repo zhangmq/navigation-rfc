@@ -26,11 +26,13 @@
  */
 'use strict';
 
+var NavigationState = require('../Navigation/NavigationState');
+var NavigationContainer = require('../Navigation/NavigationContainer');
+
 const React = require('react-native');
 const {
   Animated,
-  NavigationContainer,
-  NavigationState,
+
   PixelRatio,
   Platform,
   StyleSheet,

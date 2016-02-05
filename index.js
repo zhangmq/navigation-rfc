@@ -1,10 +1,23 @@
-export * as NavigationActions from './Navigation/NavigationActions';
-export * as NavigationAnimatedView from './Navigation/NavigationAnimatedView';
-export * as NavigationContainer from './Navigation/NavigationContainer';
-export * as NavigationReducer from './Navigation/NavigationReducer';
-export * as NavigationRootContainer from './Navigation/NavigationRootContainer';
-export * as NavigationState from './Navigation/NavigationState';
-export * as NavigationView from './Navigation/NavigationView';
-export * as NavigationCard from './CustomComponents/NavigationCard';
-export * as NavigationHeader from './CustomComponents/NavigationHeader';
-export * as NavigationHeaderTitle from './CustomComponents/NavigationHeaderTitle';
+import NavigationActions from './Navigation/NavigationActions';
+import NavigationAnimatedView from './Navigation/NavigationAnimatedView';
+import NavigationContainer from './Navigation/NavigationContainer';
+import NavigationReducer from './Navigation/NavigationReducer';
+import NavigationRootContainer from './Navigation/NavigationRootContainer';
+import NavigationState from './Navigation/NavigationState';
+import NavigationView from './Navigation/NavigationView';
+import NavigationCard from './CustomComponents/NavigationCard';
+import * as NavigationHeader from './CustomComponents/NavigationHeader';
+import * as NavigationHeaderTitle from './CustomComponents/NavigationHeaderTitle';
+
+export {
+    NavigationActions,
+    NavigationAnimatedView,
+    NavigationContainer,
+    NavigationReducer,
+    NavigationRootContainer,
+    NavigationState,
+    NavigationView,
+    NavigationCard,
+    NavigationHeader,
+    NavigationHeaderTitle
+}

@@ -11,9 +11,9 @@
  */
 'use strict';
 
-var AsyncStorage = require('AsyncStorage');
+var { AsyncStorage } = require('react-native');
 var NavigationReducer = require('./NavigationReducer');
-var React = require('React');
+var React = require('react-native');
 
 var invariant = require('invariant');
 

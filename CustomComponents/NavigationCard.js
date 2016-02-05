@@ -27,11 +27,12 @@
 'use strict';
 
 var React = require('react-native');
+var NavigationActions = require('../Navigation/NavigationActions');
+var NavigationState = require('../Navigation/NavigationState');
+var NavigationContainer = require('../Navigation/NavigationContainer');
+
 var {
   Animated,
-  NavigationActions,
-  NavigationState,
-  NavigationContainer,
   PanResponder,
   StyleSheet,
   View,
