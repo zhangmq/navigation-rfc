@@ -14,8 +14,8 @@
 var NavigationState = require('./NavigationState');
 var NavigationContainer = require('./NavigationContainer');
 var React = require('react-native');
-
-var { Animated, View, Map } = require('react-native');
+var { Map } = require('immutable');
+var { Animated, View } = require('react-native');
 
 var invariant = require('invariant');
 
