@@ -11,24 +11,24 @@
  */
 'use strict';
 
-var { AsyncStorage } = require('react-native');
-var NavigationReducer = require('./NavigationReducer');
+//var { AsyncStorage } = require('react-native');
+//var NavigationReducer = require('./NavigationReducer');
 var React = require('react-native');
 
 var invariant = require('invariant');
 
 const NavigationRootContainer = React.createClass({
   propTypes: {
-    initialState: React.PropTypes.object.isRequired,
+    navState: React.PropTypes.object.isRequired,
     renderNavigator: React.PropTypes.func.isRequired,
-    reducer: React.PropTypes.func,
-    persistenceKey: React.PropTypes.string,
+    //reducer: React.PropTypes.func,
+    //persistenceKey: React.PropTypes.string,
     stringToRoute: React.PropTypes.func,
     routeToString: React.PropTypes.func,
   },
   getDefaultProps: function(): Object {
     return {
-      reducer: NavigationReducer,
+      //reducer: NavigationReducer,
       stringToRoute: JSON.parse,
       routeToString: JSON.stringify,
     };
@@ -37,6 +37,7 @@ const NavigationRootContainer = React.createClass({
     onNavigation: React.PropTypes.func,
     navigationState: React.PropTypes.object,
   },
+  /*
   getInitialState: function(): Object {
     let navState = null;
     if (this.props.persistenceKey) {
@@ -63,32 +64,36 @@ const NavigationRootContainer = React.createClass({
           return;
         }
         this.setState({
-          /* $FlowFixMe - default props will ensure this prop is not undefined */
+          /* $FlowFixMe - default props will ensure this prop is not undefined
           navState: this.props.stringToRoute(storedString),
         });
       });
-    }
-  },
+  }
+  },*/
   getChildContext: function(): Object {
     return {
       onNavigation: this.handleNavigation,
-      navigationState: this.state.navState,
+      navigationState: this.props.navState,
     };
   },
   handleNavigation: function(action: Object) {
-    /* $FlowFixMe - default props will ensure this prop is not undefined */
+    /*
+
+    /* $FlowFixMe - default props will ensure this prop is not undefined
     const navState = this.props.reducer(this.state.navState, action);
     this.setState({
       navState,
     });
     if (this.props.persistenceKey) {
-      /* $FlowFixMe - default props will ensure this prop is not undefined */
+      /* $FlowFixMe - default props will ensure this prop is not undefined
       AsyncStorage.setItem(this.props.persistenceKey, this.props.routeToString(navState));
-    }
+    }*/
+
+    this.props.onNavigation(action);
   },
   render: function(): ReactElement {
     var navigator = this.props.renderNavigator(
-      this.state.navState,
+      this.props.navState,
       this.handleNavigation
     );
     return navigator;
