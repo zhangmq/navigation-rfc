@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "main": "index.js",
   "dependencies": {
-    "react-native": "^0.18.1",
+    "react-native": "^0.20.0",
     "tinycolor": "0.0.1",
     "immutable": "^3.7.6"
   }
